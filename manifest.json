@@ -1,0 +1,32 @@
+[
+  {
+    "Path": "ServerScriptService",
+    "Name": "KnitServiceInitialized",
+    "ScriptType": "Script"
+  },
+  {
+    "Path": "ServerScriptService/ServerServices",
+    "Name": "PlayerService",
+    "ScriptType": "Script"
+  },
+  {
+    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Name": "Knit",
+    "ScriptType": "ModuleScript"
+  },
+  {
+    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Name": "Promise",
+    "ScriptType": "ModuleScript"
+  },
+  {
+    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Name": "Signal",
+    "ScriptType": "ModuleScript"
+  },
+  {
+    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Name": "Types",
+    "ScriptType": "ModuleScript"
+  }
+]
