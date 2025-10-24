@@ -6,25 +6,25 @@
     "Root": "ServerScriptService"
   },
   {
-    "Path": "Server/ExampleScript.lua",
+    "Path": "Server/ExampleScript.luau",
     "Name": "ExampleScript",
     "ScriptType": "Script",
     "Root": "ServerScriptService"
   },
   {
-    "Path": "Shared/Knit.lua",
+    "Path": "Shared/Knit.luau",
     "Name": "Knit",
     "ScriptType": "ModuleScript",
     "Root": "ReplicatedStorage/KnitLite/Shared"
   },
   {
-    "Path": "Shared/Promise.lua",
+    "Path": "Shared/Promise.luau",
     "Name": "Promise",
     "ScriptType": "ModuleScript",
     "Root": "ReplicatedStorage/KnitLite/Shared"
   },
   {
-    "Path": "Shared/Signal.lua",
+    "Path": "Shared/Signal.luau",
     "Name": "Signal",
     "ScriptType": "ModuleScript",
     "Root": "ReplicatedStorage/KnitLite/Shared"
@@ -36,9 +36,9 @@
     "Root": "ReplicatedStorage/KnitLite/Shared"
   },
   {
-    "Path": "Server/Services/PlayerService.lua",
+    "Path": "Services/PlayerService.lua",
     "Name": "PlayerService",
     "ScriptType": "Script",
-    "Root": "ServerScriptService/ServerServices"
+    "Root": "ReplicatedStorage/KnitLite/Server/Services"
   }
 ]
