@@ -1,6 +1,6 @@
 [
   {
-    "Name": "KnitInitialize",
+    "Name": "KnitServiceInitialized",
     "ScriptType": "Script",
     "Path": "ServerScriptService"
   },
