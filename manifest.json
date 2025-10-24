@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "KnitLite",
+        "ScriptType": "ModuleScript",
+        "Path": "KnitLite/KnitLite.lua"
+    },
+    {
+        "Name": "Signal",
+        "ScriptType": "ModuleScript",
+        "Path": "KnitLite/Modules/Signal.lua"
+    },
+    {
+        "Name": "ClassSystem",
+        "ScriptType": "ModuleScript",
+        "Path": "KnitLite/Modules/ClassSystem.lua"
+    },
+    {
+        "Name": "Promise",
+        "ScriptType": "ModuleScript",
+        "Path": "KnitLite/Modules/Promise.lua"
+    },
+    {
+        "Name": "PlayerService",
+        "ScriptType": "Script",
+        "Path": "KnitLite/ServerServices/PlayerService.lua"
+    },
+    {
+        "Name": "ExampleScript",
+        "ScriptType": "Script",
+        "Path": "ExampleScript.lua"
+    }
+]
