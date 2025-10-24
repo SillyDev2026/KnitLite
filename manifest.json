@@ -1,32 +1,44 @@
 [
   {
-    "Path": "ServerScriptService",
+    "Path": "Server/KnitServiceInitialized.lua",
     "Name": "KnitServiceInitialized",
-    "ScriptType": "Script"
+    "ScriptType": "Script",
+    "Root": "ServerScriptService"
   },
   {
-    "Path": "ServerScriptService/ServerServices",
-    "Name": "PlayerService",
-    "ScriptType": "Script"
+    "Path": "Server/ExampleScript.lua",
+    "Name": "ExampleScript",
+    "ScriptType": "Script",
+    "Root": "ServerScriptService"
   },
   {
-    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Path": "Shared/Knit.lua",
     "Name": "Knit",
-    "ScriptType": "ModuleScript"
+    "ScriptType": "ModuleScript",
+    "Root": "ReplicatedStorage/KnitLite/Shared"
   },
   {
-    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Path": "Shared/Promise.lua",
     "Name": "Promise",
-    "ScriptType": "ModuleScript"
+    "ScriptType": "ModuleScript",
+    "Root": "ReplicatedStorage/KnitLite/Shared"
   },
   {
-    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Path": "Shared/Signal.lua",
     "Name": "Signal",
-    "ScriptType": "ModuleScript"
+    "ScriptType": "ModuleScript",
+    "Root": "ReplicatedStorage/KnitLite/Shared"
   },
   {
-    "Path": "ReplicatedStorage/KnitLite/Shared",
+    "Path": "Shared/Types.lua",
     "Name": "Types",
-    "ScriptType": "ModuleScript"
+    "ScriptType": "ModuleScript",
+    "Root": "ReplicatedStorage/KnitLite/Shared"
+  },
+  {
+    "Path": "Server/Services/PlayerService.lua",
+    "Name": "PlayerService",
+    "ScriptType": "Script",
+    "Root": "ServerScriptService/ServerServices"
   }
 ]
