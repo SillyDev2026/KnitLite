@@ -28,5 +28,10 @@
     "Name": "KnitLite",
     "ScriptType": "ModuleScript",
     "Path": "KnitLite/Modules/Shared"
+  },
+  {
+    "Name": "PlayerService",
+    "ScriptType": "ModuleScript",
+    "Path": "KnitLite/Server/Services"
   }
 ]
