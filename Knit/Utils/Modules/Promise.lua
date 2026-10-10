@@ -51,10 +51,10 @@ function Promise.new<T>(executor: (resolve: (T) -> (), reject: (any) -> ()) -> (
         settle("fulfilled", value)
     end
 
-    task.spawn(function()
-        local ok, err = pcall(executor, resolve, reject)
-        if not ok then reject(err) end
-    end)
+    -- Execute registration synchronously so Signal:Wait cannot miss a Fire
+    -- issued immediately after the subscription is created.
+    local ok, err = pcall(executor, resolve, reject)
+    if not ok then reject(err) end
     return self :: Promise<T>
 end
 
