@@ -1,3 +1,4 @@
+--!strict
 --!native
 --!optimize 2
 
@@ -39,9 +40,23 @@ function Connection:Disconnect()
 		return
 	end
 
-	node.connected = false
-	self._node = nil
-	self._signal = nil
+    node.connected = false
+    local owner = self._signal
+    if owner then
+        local previous = nil
+        local current = owner._head
+        while current do
+            if current == node then
+                if previous then previous.next = current.next else owner._head = current.next end
+                break
+            end
+            previous = current
+            current = current.next
+        end
+    end
+    node.next = nil
+    self._node = nil
+    self._signal = nil
 end
 
 function Signal.new<Arg>(): Signal<Arg>
@@ -81,18 +96,23 @@ function Signal:Once<Arg>(fn:(Arg)->()): Connection<Arg>
 end
 
 function Signal:Fire<Arg>(value:Arg)
-	local node = self._head
-
-	while node do
-		if node.connected then
-			node.fn(value)
-		end
-		node = node.next
-	end
+    local node = self._head
+    while node do
+        local nextNode = node.next
+        if node.connected then node.fn(value) end
+        node = nextNode
+    end
 end
 
 function Signal:DisconnectAll()
-	self._head = nil
+    local node = self._head
+    self._head = nil
+    while node do
+        local nextNode = node.next
+        node.connected = false
+        node.next = nil
+        node = nextNode
+    end
 end
 
 function Signal:Wait<Arg>(): Promise.Promise<Arg>
